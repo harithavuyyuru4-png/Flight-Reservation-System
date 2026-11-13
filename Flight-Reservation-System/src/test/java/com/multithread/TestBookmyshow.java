@@ -3,7 +3,7 @@ class Bookmyshow{
 	int total_tickets=10;
 	synchronized void BookmyTickets(String name,int tickets ) {
 		if(total_tickets>=tickets) {
-			System.out.println("six tickets booked successfully");
+			System.out.println(name + "booked" + tickets +"tickets successfully");
 			total_tickets = total_tickets - tickets;
 			System.out.println("Remaining tickets are available:"+total_tickets);
 		}else {
